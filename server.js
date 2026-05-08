@@ -189,6 +189,7 @@ log('info', `🔧 Configuration:`);
 log('info', `   PORT from env: ${process.env.PORT}`);
 log('info', `   WHATSAPP_ENGINE_PORT from env: ${process.env.WHATSAPP_ENGINE_PORT}`);
 log('info', `   Final port: ${WHATSAPP_ENGINE_PORT}`);
+log('info', `   BACKEND_URL: ${process.env.BACKEND_URL || 'http://127.0.0.1:8000'}`);
 log('info', `   Session directory: ${SESSION_DIR}`);
 
 // WhatsApp Engine State
