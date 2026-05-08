@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: whatsapp-platform-api-engine
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /health
+    autoDeploy: false
+    plan: free
+    region: oregon
+    numInstances: 1
